@@ -1,0 +1,17 @@
+        <div class="portfolio-preview-left">
+                <div class="portfolio-preview-left-overlay">
+                    <span class="portfolio-preview-left-overlay-text">Hover over one</span>
+                    
+.portfolio-preview-left{
+    width:20%;
+    height:100%;
+}
+.portfolio-preview-left-overlay{
+    position:absolute;
+    left:0%;
+    height: 100%;
+    width:100%;
+}
+.portfolio-preview-left-overlay-text{
+    font-size:30px;
+}

@@ -1,0 +1,379 @@
+<!-- 
+general content thoughts:
+    kathy is an angel
+    im a butt
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <title>
+        SaskInvent
+    </title>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet">
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="css/styles_pf.css">
+      <link rel="stylesheet" href="css/styles_general.css">
+      
+    </head>
+    <body>
+        <!-- definitely overwhelmed yet -->
+        <!-- what am i doing here, probably one dish which is most popular in my area. the whole left side preview right side selection. 
+    So 2 methods: 
+    1:
+        -left side preview, 
+        -right side item grid.
+    2:
+        -left side saskinvent bar / see more or something
+        -Right side the item
+
+    lets do method 1 first, then method 2
+    -->
+    <div class="container full-screen row">
+            <div class="lr-split-l col-sm-4">
+                <!-- 
+left is kind of tricky cuz im not sure where to start and stop. Like so i probably want one of those 'fade" things on it. this is gonna be js. for now get left bar white and right content arranged. ok break.
+                -->sdsd
+            </div>
+            <div class="lr-split-r col-sm-8">
+                <!-- -->
+                <div class="col-sm-6 lr-content-item" id="lr-content-item-1" style="">contento</div>
+                <div class="col-sm-6 lr-content-item" id="lr-content-item-2">more content</div>
+                <div class="col-sm-6 lr-content-item" id="lr-content-item-3">extra more content</div>
+                <div class="col-sm-6 lr-content-item" id="lr-content-item-4">another doggog</div>
+                <div class="col-sm-6 lr-content-item" id="lr-content-item-3">extra more content</div>
+                <div class="col-sm-6 lr-content-item" id="lr-content-item-4">another doggog</div>
+                
+            </div>
+                
+    </div>
+        <!--
+    <div class="container full-screen" style="align-content: center; text-align: center; height: 120%;">
+        <div style="text-align: left; left:175px; position: absolute; top:50px;" >
+            <div class="hexagon hvr-grow">
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+        </div>
+            <div class="hexagon">
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>
+                    <div class="hexagon">
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>
+            <div class="hexagon" style="left:0px; position: absolute; top:565px;">
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>
+            <div class="hexagon" style="left:160px; position: absolute; top:283px;">
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>  
+            <div class="hexagon" style="left:485px; position: absolute; top:283px;">
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>  
+            <div class="hexagon" style="left:810px; position: absolute; top:283px;">
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>
+        </div>
+    </div>   
+-->
+    <div class="container full-screen">
+        <div class="full-screen preview">
+            <!-- for now defaults to previewing something something, done in js or html? hide dive or nah -> yah probably-->
+            <div class="left-preview">
+            </div>
+            <!-- generic cubic grid i think -->
+            <div class="right-preview">
+                <div class="item-preview flip-container" ontouchstart="this.classList.toggle('hover');" >
+                    <div class="flipper full-screen">
+                        <div class="front full-screen" id="generic">
+                            <div class="text-center card-title">
+                                <span>
+                                    fuck a tree
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back full-screen">
+                            <!-- OK so, logo
+                                        middle bar with icons
+                                        see more
+                                -->
+                            <div class="logo">
+                                <img src="assets/img/logo.png">
+                                <br>
+                                <span class="logo-subtitle">
+                                    Making Dreams Come True
+                                </span>
+                            </div>
+                            <div class="card-bar">
+                                <div class="not-gray row text-center">
+                                    <div class="col-sm-4" style="position:relative; top:30%;"><div class="fa-contain"><i class="fa fa-thermometer-quarter fa-3x" aria-hidden="true"></i></div></div>
+                                    <div class="col-sm-4" style="position:relative; top:30%;"><div class="fa-contain"><i class="fa fa-fire-extinguisher fa-3x" aria-hidden="true"></i></div></div>
+                                    <div class="col-sm-4" style="position:relative; top:30%;"><div class="fa-contain"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i></div></div>
+                                                               <div class="gray gray1" id="1">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bio" style="text-align: center;"> 
+                                <span>
+                            SO this thing will knock you to your knees. It's innovative, and give minty fresh breath.
+                            </span>
+                            </div>
+                            <div class="learn-more" >
+                            <a href="google.ca"><span id="lm"> Check it </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+                    <div class="item-preview flip-container" ontouchstart="this.classList.toggle('hover');" >
+                    <div class="flipper full-screen">
+                        <div class="front full-screen" id="generic">
+                            <div class="text-center card-title">
+                                <span>
+                                    fuck two trees
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back full-screen gray1" style="height:100%; text-align: center;" >
+                            <div class="center-box" style="text-align: center; vertical-align: middle; height:80%; margin-top:40px; display: inline-block; width:80%; background-color:white;">
+                                    <img src="assets/img/logo.png">
+                                    <br><br>
+                                    <span class="logo-subtitle" id="hw" style="font-size:20px;"><u>
+                                        Real Life Superheros</u>
+                                    </span>
+                                
+                                    <div class="bio" id="hw" style="font-size:20px;"> 
+                                        <span>
+                                            SO this thing will knock you to your knees. It's innovative, and give minty fresh breath. Welcome to real life, bitch.
+                                        </span>
+                                    </div>
+
+                                    <div class="learn-more" >
+                                        <a href="google.ca"><span id="hw"> See more </span></a>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>  
+                <div class="item-preview flip-container" ontouchstart="this.classList.toggle('hover');" >
+                    <div class="flipper full-screen">
+                        <div class="front full-screen" id="generic">
+                            <div class="text-center card-title">
+                                <span>
+                                    get your shit together
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back full-screen">
+                            <!-- OK so, logo
+                                        middle bar with icons
+                                        see more
+                                -->
+                            <div class="col-sm-5" style="height: 100%; padding: 0px;">
+    
+                                    <div class="not-gray" style="width: 100%; height: 100%; text-align: center; color: black;">
+<br><br>
+                                        <span class="title"> 
+                                            <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                                            <br> SaskInvent</span>
+                                        <br> <br><br>
+                                            <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i> SaskInvent
+                                        <br><br>
+                                            <i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i> SaskInventTw
+                                        <br><br>
+                                            <i class="fa fa-2x fa-youtube-play" aria-hidden="true"></i> SaskInventLive
+                                        <br>
+                                        
+                                    </div>
+
+                                <div class="gray card-left col-sm-5 ">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            <div class="col-sm-7" id = "hw" style="text-align: center;">
+                                <br><br><br><br>
+                                <span class="card-maintext" id="hw">
+                                Doing the hard stuff, so you dont have to
+                                </span> 
+                                <br>
+                                <br>
+                                <span class="card-subtext">
+                                we really like to do this stuff. its our speciality. let our thing envelope you.
+                                </span>
+                                <div class="learn-more" >
+                                    <a href="google.ca"><span id="lm"> Check it </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <div class="item-preview flip-container" ontouchstart="this.classList.toggle('hover');" >
+                    <div class="flipper full-screen">
+                        <div class="front full-screen" id="generic">
+                            <div class="text-center card-title">
+                                <span>
+                                    Spaghetti Loops    
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back full-screen">
+                            <!-- OK so, logo
+                                        middle bar with icons
+                                        see more
+                                -->
+                            <div class="logo">
+                                <img src="assets/img/logo.png">
+                                <br>
+                                <span class="logo-subtitle">
+                                    Making Dreams Come True
+                                </span>
+                            </div>
+                            <div class="card-bar">
+                                <div class="not-gray row text-center">
+                                    <div class="col-sm-4" style="position:relative; top:30%;"><div class="fa-contain"><i class="fa fa-thermometer-quarter fa-3x" aria-hidden="true"></i></div></div>
+                                    <div class="col-sm-4" style="position:relative; top:30%;"><div class="fa-contain"><i class="fa fa-fire-extinguisher fa-3x" aria-hidden="true"></i></div></div>
+                                    <div class="col-sm-4" style="position:relative; top:30%;"><div class="fa-contain"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i></div></div>
+                                                               <div class="gray gray1" id="1">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bio" style="text-align: center;"> 
+                                <span>
+                            SO this thing will knock you to your knees. It's innovative, and give minty fresh breath.
+                            </span>
+                            </div>
+                            <div class="learn-more" >
+                            <a href="google.ca"><span id="lm"> Check it </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+                    <div class="item-preview flip-container" ontouchstart="this.classList.toggle('hover');" >
+                    <div class="flipper full-screen">
+                        <div class="front full-screen" id="generic">
+                            <div class="text-center card-title">
+                                <span>
+                                        Specifically, Gerald
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back full-screen" style="height:100%; text-align: center;">
+                            <div class="center-box" style="text-align: center; vertical-align: middle; height:80%; margin-top:40px; display: inline-block; width:80%; ">
+                                    <img src="assets/img/logo.png">
+                                    <br><br>
+                                    <span class="logo-subtitle" id="hw" style="font-size:20px;"><u>
+                                        Real Life Superheros</u>
+                                    </span>
+                                
+                                    <div class="bio" id="hw" style="font-size:20px;"> 
+                                        <span>
+                                            SO this thing will knock you to your knees. It's innovative, and give minty fresh breath. Welcome to real life, bitch.
+                                        </span>
+                                    </div>
+
+                                    <div class="learn-more" >
+                                        <a href="google.ca"><span id="hw"> See more </span></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="item-preview flip-container" ontouchstart="this.classList.toggle('hover');" >
+                    <div class="flipper full-screen">
+                        <div class="front full-screen" id="generic">
+                            <div class="text-center card-title">
+                                <span>
+                                    Woof Woof. lol.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back full-screen">
+                            <!-- OK so, logo
+                                        middle bar with icons
+                                        see more
+                                -->
+                            <div class="col-sm-5" style="height: 100%; padding: 0px;">
+    
+                                    <div class="not-gray" style="width: 100%; height: 100%; text-align: center; color: black;">
+<br><br>
+                                        <span class="title"> 
+                                            <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                                            <br> SaskInvent</span>
+                                        <br> <br><br>
+                                            <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i> SaskInvent
+                                        <br><br>
+                                            <i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i> SaskInventTw
+                                        <br><br>
+                                            <i class="fa fa-2x fa-youtube-play" aria-hidden="true"></i> SaskInventLive
+                                        <br>
+                                        
+                                    </div>
+
+                                <div class="gray card-left col-sm-5 ">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            <div class="col-sm-7" id = "hw" style="text-align: center;">
+                                <br><br><br><br>
+                                <span class="card-maintext" id="hw">
+                                Doing the hard stuff, so you dont have to
+                                </span> 
+                                <br>
+                                <br>
+                                <span class="card-subtext">
+                                we really like to do this stuff. its our speciality. let our thing envelope you.
+                                </span>
+                                <div class="learn-more" >
+                                    <a href="google.ca"><span id="lm"> Check it </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="hex-container">
+            <div class="hex">
+                
+            </div>
+            <div class="over-hex">
+            sdfasdf
+            </div>
+        </div>
+    </div>
+    
+</body>    
+    
+</html>
+
+
