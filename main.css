@@ -20,7 +20,6 @@ header
     justify-content: center;
     background-size: cover; 
     margin-bottom: 30px;
-
     color: #eee;
 }
 .down-button{
@@ -71,21 +70,20 @@ li{
 .hero-title{
     grid-column: 1 / 3;
     grid-row: 1;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .hero-subtitle{
     grid-column: 1 / 3;
-    grid-row: 2;
-    font-size: 30px;
+    grid-row: 3;
+    font-size: 20px;
 }
 
 .hero-button-wrapper{
     grid-column: 1 / 2;
-    grid-row: 3;
-    font-size: 30px;
-
-    display: grid;
+    grid-row: 4;
+    font-size: 20px;
+    float:right;
 }
 
 #down
