@@ -1,11 +1,11 @@
 html, body{
-    margin: 0;
     height:100%;
+    margin: 0;
     padding: 0px;
     /* font-family: monospace; */
     font-family: atlas-light,helvetica,arial,sans-serif;
     font-weight: 50;
-
+    background-color:#fafafa;
 }
 
 header
@@ -124,13 +124,14 @@ a {
 
 }
 
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 40%;
   padding: 10px;
   margin: 10px;
-  background-color:#fafafa;
+  background-color:#ffffff;
 }
 
 .card:hover {
@@ -205,6 +206,33 @@ a {
     }
   }
   
+  .title{
+    width:100%;
+      }
+
+  .title-title{
+    font-size:2em;
+    width: 80%;
+    text-align:center;
+    margin: auto auto;
+    margin-top: 10px;
+
+  }
+
+  .resume-column {
+    float: left;
+    width: 50%;
+    text-align:center;
+
+  }
+  
+  /* Clear floats after the columns */
+  .resume-section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .arrow {
     position: fixed;
     bottom: 0;
