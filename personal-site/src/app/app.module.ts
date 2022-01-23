@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { NavComponent } from './common/nav/nav.component';
 import { BlogComponent } from './screens/blog/blog.component';
 import { RandomCssComponent } from './common/styling/random-css.component';
+import { DuplicatesDirective } from './common/styling/duplicates.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RandomCssComponent } from './common/styling/random-css.component';
     HomeComponent,
     NavComponent,
     BlogComponent,
-    RandomCssComponent
+    RandomCssComponent,
+    DuplicatesDirective
   ],
   imports: [
     BrowserModule,

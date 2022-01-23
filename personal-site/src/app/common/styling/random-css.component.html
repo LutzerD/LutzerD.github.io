@@ -1,9 +1,9 @@
 <div [ngClass]="effect.parentClass" style="width: fit-content">
-  <div [ngClass]="effect.childClass">
-    <ng-content></ng-content>
+  <div [ngClass]="effect.childClass" [duplicate]="effect.duplicates">
     <ng-content></ng-content>
   </div>
 </div>
+
 <br />
 <ul>
   <li>

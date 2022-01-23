@@ -2,7 +2,7 @@ export class CSSEffect {
   constructor(
     public parentClass: string = '',
     public childClass: string = '',
-    public duplicate: boolean = false
+    public duplicates: number = 0,
   ) {}
 }
 export const CSSEffects: { [groupName: string]: CSSEffect[] } = {
@@ -10,6 +10,6 @@ export const CSSEffects: { [groupName: string]: CSSEffect[] } = {
   Hoverable: [
     new CSSEffect('twisty'),
     new CSSEffect('lineline'),
-    new CSSEffect('p-switcheroo', 'switcheroo', true),
+    new CSSEffect('p-switcheroo', 'switcheroo', 1),
   ],
 };
