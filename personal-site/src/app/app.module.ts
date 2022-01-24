@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -10,6 +10,9 @@ import { NavComponent } from './common/nav/nav.component';
 import { BlogComponent } from './screens/blog/blog.component';
 import { RandomCssComponent } from './common/styling/random-css.component';
 import { DuplicatesDirective } from './common/styling/duplicates.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import { HelloComponent } from './screens/home/hello/hello.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +21,19 @@ import { DuplicatesDirective } from './common/styling/duplicates.directive';
     NavComponent,
     BlogComponent,
     RandomCssComponent,
-    DuplicatesDirective
+    DuplicatesDirective,
+    HelloComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
     RouterModule,
+    MatTooltipModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

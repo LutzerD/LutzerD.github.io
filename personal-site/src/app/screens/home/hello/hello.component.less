@@ -1,0 +1,18 @@
+img {
+  width: 50vw;
+  border-radius: 50%;
+  transition: all 1s ease-out;
+  transition-delay: 1s;
+  animation-name: example;
+}
+
+
+@import "../../../common/styling/animations.less";
+
+
+//Need to apply transform to showing state after image loaded, otherwise it looks glitchy.
+.loaded-img {
+    .roll-in();
+    animation-duration: 4s;
+}
+  

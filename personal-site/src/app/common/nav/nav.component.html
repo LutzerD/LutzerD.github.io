@@ -1,9 +1,16 @@
 <div fxLayout="row" fxLayoutAlign="end center">
-  <div *ngFor="let link of links">
+  <div
+    *ngFor="let link of links"
+    class="nav-item"
+    [routerLink]="[link.Route]"
+    [routerLinkActive]="'active-route'"
+  >
     <random-css>
-      <h1>
-        {{ link }} 
-      </h1>
+      <button class="nav-button">
+        <h1 [matTooltip]="link.Hint">
+          {{ link.Title }}
+        </h1>
+      </button>
     </random-css>
   </div>
 </div>
