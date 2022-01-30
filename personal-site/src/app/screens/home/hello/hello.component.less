@@ -4,15 +4,20 @@ img {
   transition: all 1s ease-out;
   transition-delay: 1s;
   animation-name: example;
+  display:none;
 }
 
-
-@import "../../../common/styling/animations.less";
-
+@import "common-styles";
+@import "animations"; //for roll-in
 
 //Need to apply transform to showing state after image loaded, otherwise it looks glitchy.
 .loaded-img {
+  display: initial;
     .roll-in();
     animation-duration: 4s;
 }
-  
+
+.container{
+  .backgroundColor(100%);
+  .full-screen();
+}

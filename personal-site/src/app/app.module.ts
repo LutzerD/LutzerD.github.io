@@ -13,6 +13,9 @@ import { DuplicatesDirective } from './common/styling/duplicates.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { HelloComponent } from './screens/home/hello/hello.component';
+import { PortfolioComponent } from './screens/home/portfolio/portfolio.component';
+import { ZigZagScrollDirective } from './common/directives/zig-zag-scroll.directive';
+import { FilterComponent } from './screens/home/portfolio/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { HelloComponent } from './screens/home/hello/hello.component';
     RandomCssComponent,
     DuplicatesDirective,
     HelloComponent,
+    PortfolioComponent,
+    ZigZagScrollDirective,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,

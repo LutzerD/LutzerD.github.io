@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>I'm a</h1>
+  <ng-container *ngIf="categories$ | async as category; else noContentRef">
+    <button
+      *ngFor="let category of categories$ | async"
+      class="filter-button"
+      (click)="category.toggle()"
+      [ngClass]="{ active: category.active }"
+    >
+      {{ category.display }}
+    </button>
+  </ng-container>
+</div>
+
+<ng-template #noContentRef>
+  <div
+    class="full-screen container"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+  >
+    <div>
+      <h1>No content found...</h1>
+      <h1>I'll have to check out the monkeys...</h1>
+    </div>
+  </div>
+</ng-template>

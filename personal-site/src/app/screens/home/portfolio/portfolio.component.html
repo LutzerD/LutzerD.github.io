@@ -1,0 +1,26 @@
+<!-- <div class="container" *ngIf="content.length; else noContentRef"> -->
+<div class="container">
+  <app-filter></app-filter>
+  <div fxLayout="row" class="card-container">
+    <ng-container *ngIf="content$ | async as porfolio; else noContentRef">
+      <div class="card" *ngFor="let content of content$ | async as porfolio">
+        <div class="image">Image</div>
+        <h1 class="title">{{content.Title}}</h1>
+        <h2 class="subtitle">Subtitle</h2>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<ng-template #noContentRef>
+  <div
+    class="full-screen container"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+  >
+    <div>
+      <h1>No content found...</h1>
+      <h1>I'll have to check out the monkeys...</h1>
+    </div>
+  </div>
+</ng-template>
